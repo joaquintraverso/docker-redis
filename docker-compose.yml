@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web-app:
+    build: .
+    container_name: 'api_connec_to_redis'
+    command: sh -c 'nodemon app.js'
+    ports:
+      - '4000:4000'
+    volumes:
+      - /home/traverso/Facultad/NoSQL/TP_2/api/backend:/backend
+    depends_on:
+      - "db-redis-node"
+
+  db-redis-node:
+    container_name: 'db_redis_node_example'
+    image: redis
+    ports:
+      - "6379:6379"

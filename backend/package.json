@@ -1,0 +1,20 @@
+{
+  "name": "api_prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "*",
+    "express": "*",
+    "cors": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
